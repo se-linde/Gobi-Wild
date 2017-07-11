@@ -7,4 +7,7 @@
 
 // Another test edit! (Dwayne)!
 
-// A third test edit! (Dwayne)! 
+<<<<<<< HEAD
+=======
+//meow
+>>>>>>> origin/master
