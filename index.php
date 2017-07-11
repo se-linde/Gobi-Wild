@@ -7,7 +7,7 @@
 
 // Another test edit! (Dwayne)!
 
-<<<<<<< HEAD
-=======
 //meow
->>>>>>> origin/master
+
+
+// This is a try at a commit! Dwayne. meow.
