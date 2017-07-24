@@ -12,10 +12,7 @@
 <!-- make this responsive --> 
 <meta name="viewport" content="width=device-width" />    
     
-
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-    
-    
+  
 <!-- stylesheets --> 
     
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -27,3 +24,5 @@
 <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
 
 <!--  Rest of the header to be written below! ---> 
+    
+<div id-"content">    
