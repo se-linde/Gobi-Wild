@@ -10,7 +10,7 @@
 <meta name="keywords" content="*add keywords here" />
      
 <!-- make this responsive --> 
-<meta name="viewport" content="width=device-width" />    
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />    
     
   
 <!-- stylesheets --> 
@@ -25,4 +25,20 @@
 
 <!--  Rest of the header to be written below! ---> 
     
-<div id-"content">    
+<!-- The WP head --> 
+<?php wp_head(); ?>    
+</head>    
+
+<div id="header">
+<h1 id="logo"><a href="http://www.lindese.com/gobiwild/wordpress/">Gobi Wild</a></h1>
+<img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/img-toggle.png" width="25" height="25" alt="Toggle Menu">
+</div>
+<!-- End Header -->    
+    
+    
+<!-- begin navigation - the nav bar -->
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', 'items_wrap' => '<ul id="navigation-items" class="%2$s">%3$s</ul>', ) ); ?>
+<!-- end navigation - the nav bar -->    
+    
+<!-- begin the content -->     
+<div id="content">    
