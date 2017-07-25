@@ -1,1 +1,91 @@
-// style.css
+/*
+Theme Name: Gobi-Wild
+Author: Melissa Wong, Dwayne Linde, Christopher Cornwell, Emily McKinnon, Kairong Xu
+Author URI: n/a
+Description: Responsive theme for Gobi Wild Nature Camps
+Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: arial, sans-serif; }
+
+header {
+  width: 100%;
+  height: 220px; }
+
+div#header-top {
+  background-color: #ccc;
+  margin-bottom: 10px;
+  padding: 5px 14%; }
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #ccc; }
+  nav ul {
+    width: 100%;
+    max-width: 980px;
+    list-style-type: none;
+    display: flex;
+    line-height: 60px;
+    margin: auto;
+    font-size: 1.2em; }
+    nav ul li {
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      line-height: 60px; }
+
+main {
+  max-width: 980px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto 30px; }
+
+div#spotlight {
+  position: relative;
+  margin: 0 auto 30px; }
+  div#spotlight p {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+    font-size: 2em;
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 1% 2%;
+    line-height: 1.1; }
+
+img.carousel {
+  float: right;
+  margin: 20px; }
+
+footer {
+  width: 100%;
+  height: 120px;
+  clear: both;
+  background-color: #ccc;
+  margin-top: 20px; }
+  footer nav {
+    height: 100px; }
+    footer nav li {
+      line-height: 100px; }
+
+div#copyright {
+  max-width: 940px;
+  margin: auto;
+  text-align: right; }
+
+h1, h2 {
+  margin-bottom: 10px; }
+
+p {
+  margin-bottom: 10px; }
+  p:last-of-type {
+    margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
