@@ -11,13 +11,19 @@ Version: 1.0
 
 
 //Register my sidebar
-register_sidebars(3,array(
-	
-	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	'after_widget' => '</div>',
-	'before_title' => '<h2>',
-	'after_title' => '</h2>',
-));
+function gobi_widgets_init() {
+	register_sidebar(array(
+		'name'          => __( 'Header', 'gobi-wild' ),
+		'id'            => 'header-widget',
+		'description' 	=> __( 'Widgets in this area will be shown in the upper-right header area', 'gobi-wild' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	));
+}
+
+add_action( 'widgets_init', 'gobi_widgets_init' );
 
 //Register Nav Menus
 register_nav_menus(array(
