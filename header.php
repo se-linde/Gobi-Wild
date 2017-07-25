@@ -30,6 +30,7 @@
 <header>
 	<div id="header-top">
 		<img src="<?php bloginfo('template_directory'); ?>/assets/logo.png" id="logo">
+		<?php dynamic_sidebar('header-widget'); ?>
 	</div> <!-- #header-top -->
 	<?php wp_nav_menu(array( 
 		'theme_location' => 'main-menu',
