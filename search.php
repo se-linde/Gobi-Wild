@@ -3,10 +3,6 @@
 
         <!-- header end  --->   
     
-    	<aside class="sidebar">
-        <?php get_sidebar(); ?>
-        </aside>
-
         <small>search.php</small>
         
         <!-- end content  --->

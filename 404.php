@@ -1,10 +1,6 @@
 <?php get_header(); ?>
         </nav>
         <!-- header end  -->   
-    
-    	<aside class="sidebar">
-        <?php get_sidebar(); ?>
-        </aside>
         
 		<!-- begin content  -->
      	<div class="background">
