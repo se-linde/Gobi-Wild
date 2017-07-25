@@ -19,11 +19,11 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
 
 
-<!-- JavaScript and JQuery scripts ---> 
+<!-- JavaScript and JQuery scripts --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
 
-<!--  Rest of the header to be written below! ---> 
+<!--  Rest of the header to be written below! --> 
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
