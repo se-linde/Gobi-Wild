@@ -18,7 +18,7 @@
     <section class="widget-item"> 
         <h2>Latest Postings: </h2>
         <ul>
-            <?php rewind_posts(); ? // Stops loop 1. >
+            <?php rewind_posts(); //stops loop 1. ?> 
             <?php query_posts('showposts=4'); // gives directions to loop 2 ?>
             <?php while (have_posts()) : the_post(); // starts loop 2. ?>
             <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
