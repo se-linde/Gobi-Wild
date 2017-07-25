@@ -2,7 +2,6 @@
 
 <!-- the content here --> 
 
-<div id="content"> 
     <?php if (have_posts()) : while (have_posts()) : the_post(); // This starts the loop?> 
     
     <article id="post-<?php the_ID(); ?>" class="post-excerpt">
@@ -21,6 +20,5 @@
         
         <small>index.php</small> 
     
-</div>
 
 <?php get_footer(); ?> 
