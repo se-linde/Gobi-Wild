@@ -5,7 +5,6 @@ Author URI: n/a
 Description: Responsive theme for Gobi Wild Nature Camps
 Version: 1.0
 */
-
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +30,8 @@ div#header-top {
     float: left; }
   div#header-top div#search-3 {
     float: right; }
+  div#header-top label.screen-reader-text {
+    display: none; }
 
 nav {
   width: 100%;

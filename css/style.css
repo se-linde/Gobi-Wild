@@ -23,6 +23,8 @@ div#header-top {
     float: left; }
   div#header-top div#search-3 {
     float: right; }
+  div#header-top label.screen-reader-text {
+    display: none; }
 
 nav {
   width: 100%;
