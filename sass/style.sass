@@ -5,6 +5,15 @@
 	line-height: 1.5
 	font-family: arial, sans-serif
 
+//Floated Elements
+.alignleft
+	float: left
+	margin: 20px
+
+.alignright
+	float: right
+	margin: 20px
+
 //Header Styles
 header
 	width: 100%
@@ -58,6 +67,7 @@ main
 
 .wp-post-image
 	position: relative
+	display: block
 	margin: 0 auto 30px
 	p 
 		position: absolute
@@ -75,11 +85,31 @@ img.carousel
 	margin: 20px
 
 //Post Styles
+article.event
+	border-bottom: 2px solid black
+	overflow: hidden
+	padding-bottom: 30px
+
 h2.post-title
 	margin-bottom: 0
+	margin-top: 30px
+	a 
+		text-decoration: none
+		color: black
+		&:visited 
+			color: black
 
-div.blog-text
-	margin-top: 10px
+h3.post-meta
+	margin-top: 0
+	margin-bottom: 10px
+	font-size: 1.5em
+	a 
+		text-decoration: none
+
+img.size-blog-list
+	@extend .alignleft
+	margin-top: 0
+	margin-left: 0
 
 //Footer Styles
 footer
@@ -99,14 +129,7 @@ div#copyright
 	margin: auto
 	text-align: right
 
-//Floated Elements
-.alignleft
-	float: left
-	margin: 20px
 
-.alignright
-	float: right
-	margin: 20px
 
 //General Typography
 p 

@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
 <section> 
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+    <?php 
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
     	if ( has_post_thumbnail() ) {
 			the_post_thumbnail();
 		} 
-    	the_content(''); // This gets the home page's content
-    endwhile; endif; // this ends loop 1. ?>     
+    	the_content('');
+    endwhile; endif; 
+    ?>     
 </section>    
 
 <small>front-page.php</small>

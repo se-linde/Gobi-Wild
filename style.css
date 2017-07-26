@@ -5,12 +5,21 @@ Author URI: n/a
 Description: Responsive theme for Gobi Wild Nature Camps
 Version: 1.0
 */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
   font-family: arial, sans-serif; }
+
+.alignleft, img.size-blog-list {
+  float: left;
+  margin: 20px; }
+
+.alignright {
+  float: right;
+  margin: 20px; }
 
 header {
   width: 100%;
@@ -63,6 +72,7 @@ main {
 
 .wp-post-image {
   position: relative;
+  display: block;
   margin: 0 auto 30px; }
   .wp-post-image p {
     position: absolute;
@@ -79,11 +89,30 @@ img.carousel {
   float: right;
   margin: 20px; }
 
-h2.post-title {
-  margin-bottom: 0; }
+article.event {
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  padding-bottom: 30px; }
 
-div.blog-text {
-  margin-top: 10px; }
+h2.post-title {
+  margin-bottom: 0;
+  margin-top: 30px; }
+  h2.post-title a {
+    text-decoration: none;
+    color: black; }
+    h2.post-title a:visited {
+      color: black; }
+
+h3.post-meta {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em; }
+  h3.post-meta a {
+    text-decoration: none; }
+
+img.size-blog-list {
+  margin-top: 0;
+  margin-left: 0; }
 
 footer {
   width: 100%;
@@ -100,14 +129,6 @@ div#copyright {
   max-width: 940px;
   margin: auto;
   text-align: right; }
-
-.alignleft {
-  float: left;
-  margin: 20px; }
-
-.alignright {
-  float: right;
-  margin: 20px; }
 
 p {
   margin-bottom: 1.3em; }

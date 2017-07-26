@@ -33,10 +33,17 @@ register_nav_menus(array(
 
 //featured images and post thumnails
 add_theme_support( 'post-thumbnails' );
-//
+add_image_size('blog-list', 350, 250, true);
+
 // page excerpts
 add_post_type_support( 'page', 'excerpt' );
 
+//Replaces the excerpt "Read More" text
+function new_excerpt_more($more) {
+       global $post;
+	return '<a href="'. get_permalink($post->ID) . '">....LEARN MORE</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 // SEO Title Tag
 function get_my_title_tag() {
