@@ -1,5 +1,4 @@
 *.log
-assets/
 .sass-cache/
 css/*.map
 
