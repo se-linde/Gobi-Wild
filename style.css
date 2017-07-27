@@ -15,11 +15,11 @@ Version: 1.0
 
 .alignleft, img.size-blog-list {
   float: left;
-  margin: 20px; }
+  margin: 20px 20px 20px 0; }
 
 .alignright {
   float: right;
-  margin: 20px; }
+  margin: 20px 0 20px 20px; }
 
 header {
   width: 100%;
@@ -93,6 +93,10 @@ article.event {
   overflow: hidden;
   padding-bottom: 30px; }
 
+h1.post-title {
+  margin-top: 30px;
+  margin-bottom: 10px; }
+
 h2.post-title {
   margin-bottom: 0;
   margin-top: 30px; }
@@ -112,6 +116,10 @@ h3.post-meta {
 img.size-blog-list {
   margin-top: 0;
   margin-left: 0; }
+
+ol {
+  margin-left: 5%; 
+  margin-bottom: 20px; }
 
 footer {
   width: 100%;
