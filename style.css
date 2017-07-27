@@ -15,11 +15,11 @@ Version: 1.0
 
 .alignleft, img.size-blog-list {
   float: left;
-  margin: 20px 20px 20px 0; }
+  margin: 20px; }
 
 .alignright {
   float: right;
-  margin: 20px 0 20px 20px; }
+  margin: 20px; }
 
 header {
   width: 100%;
@@ -69,15 +69,17 @@ main {
   padding-right: 20px;
   margin: 0 auto 30px; }
 
-.wp-post-image {
-  position: relative;
-  display: block;
-  margin: 0 auto 30px; }
-  .wp-post-image p {
+div#spotlight {
+  position: relative; }
+  div#spotlight img.wp-post-image {
+    display: block;
+    max-width: 940px;
+    margin: 0 auto 30px; }
+  div#spotlight p#banner {
     position: absolute;
     z-index: 10;
-    top: 30px;
-    left: 30px;
+    top: 10%;
+    left: 5%;
     font-size: 2em;
     border: 1px solid black;
     background-color: #fff;
@@ -118,7 +120,7 @@ img.size-blog-list {
   margin-left: 0; }
 
 ol {
-  margin-left: 5%; 
+  margin-left: 5%;
   margin-bottom: 20px; }
 
 footer {
