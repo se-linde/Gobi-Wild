@@ -63,6 +63,17 @@ nav {
         nav ul li a:visited {
           color: #000; }
 
+div#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+div.flex-element {
+  width: 300px;
+  height: 200px;
+  background-image: url(http://via.placeholder.com/300x200);
+  margin-bottom: 20px; }
+
 main {
   max-width: 980px;
   padding-left: 20px;
@@ -75,6 +86,7 @@ div#spotlight {
     display: block;
     max-width: 940px;
     margin: 0 auto 30px; }
+    
   div#spotlight p#banner {
     position: absolute;
     z-index: 10;
