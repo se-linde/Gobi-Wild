@@ -12,10 +12,14 @@
 	        <?php the_excerpt('LEARN MORE'); ?>
 	    </article>
     
-
+<<<<<<< HEAD
+    <h2><a href="<?php the_permalink(); ?>">
+        <?php the_title(); ?></a></h2>
+        <small>Posted on <?php the_time('f j, Y'); ?> by <?php the_author(); ?> in <?php the_category(', '); ?></small>
+=======
 <?php endwhile; endif; ?>
-
+>>>>>>> 60a01fafbf6ef62f98a7cdaeef5cb2e81e7e03cc
         
 <small>index.php</small> 
     
-<?php get_footer(); ?>
+<?php get_footer(); ?> 

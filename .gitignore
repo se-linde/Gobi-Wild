@@ -1,5 +1,6 @@
 *.log
-assets/
+.sass-cache/
+css/*.map
 
 /.htaccess
 /license.txt

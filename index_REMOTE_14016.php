@@ -12,10 +12,8 @@
 	        <?php the_excerpt('LEARN MORE'); ?>
 	    </article>
     
-
 <?php endwhile; endif; ?>
-
         
 <small>index.php</small> 
     
-<?php get_footer(); ?>
+<?php get_footer(); ?> 

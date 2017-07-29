@@ -5,33 +5,71 @@
 	line-height: 1.5
 	font-family: arial, sans-serif
 
+//Floated Elements
+.alignleft
+	float: left
+	margin: 20px
+
+.alignright
+	float: right
+	margin: 20px
+
+//Header Styles
 header
 	width: 100%
 	height: 220px
+	background-color: #ccc
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	margin-bottom: 10px
 
 div#header-top
-	background-color: #ccc
-	margin-bottom: 10px
-	padding: 5px 14%
+	width: 80%
+	max-width: 980px
+	margin: 0 auto 10px
+	padding-top: 20px
+	img
+		float: left
+	div#search-3
+		float: right
+	label.screen-reader-text
+		display: none
 
 nav
 	width: 100%
 	height: 60px
-	background-color: #ccc
+	border-top: 10px solid #fff
 	ul
 		width: 100%
 		max-width: 980px
 		list-style-type: none
 		display: flex
-		line-height: 60px
 		margin: auto
-		font-size: 1.2em
 		li 
 			text-align: center
 			width: 100%
 			text-transform: uppercase
-			line-height: 60px
+			a 
+				text-decoration: none
+				color: #000
+				line-height: 50px
+				&:visited
+					color: #000
 
+//GALLERY PAGE
+div#flexbox
+	display: flex
+	flex-wrap: wrap 
+	justify-content: space-between
+
+div.flex-element
+	width: 300px
+	height: 200px
+	background-image: url(http://via.placeholder.com/300x200)
+	margin-bottom: 20px
+
+//Content Styles
 main 
 	max-width: 980px
 	padding-left: 20px 
@@ -40,12 +78,15 @@ main
 
 div#spotlight
 	position: relative
-	margin: 0 auto 30px
-	p 
+	img.wp-post-image
+		display: block
+		max-width: 940px
+		margin: 0 auto 30px
+	p#banner 
 		position: absolute
 		z-index: 10
-		top: 30px 
-		left: 30px 
+		top: 10%
+		left: 5%
 		font-size: 2em
 		border: 1px solid black
 		background-color: #fff
@@ -56,6 +97,42 @@ img.carousel
 	float: right
 	margin: 20px
 
+//Post Styles
+article.event
+	border-bottom: 2px solid black
+	overflow: hidden
+	padding-bottom: 30px
+
+h1.post-title
+	margin-top: 30px
+	margin-bottom: 10px
+
+h2.post-title
+	margin-bottom: 0
+	margin-top: 30px
+	a 
+		text-decoration: none
+		color: black
+		&:visited 
+			color: black
+
+h3.post-meta
+	margin-top: 0
+	margin-bottom: 10px
+	font-size: 1.5em
+	a 
+		text-decoration: none
+
+img.size-blog-list
+	@extend .alignleft
+	margin-top: 0
+	margin-left: 0
+
+ol 
+	margin-left: 5%
+	margin-bottom: 20px
+
+//Footer Styles
 footer
 	width: 100%
 	height: 120px
@@ -72,13 +149,30 @@ div#copyright
 	max-width: 940px
 	margin: auto
 	text-align: right
-	
 
 
-h1, h2
-	margin-bottom: 10px
 
-p
-	margin-bottom: 10px
-	&:last-of-type
-		margin-bottom: 30px
+//General Typography
+p 
+	margin-bottom: 1.3em
+
+h1, h2, h3, h4 
+	margin: 1.414em 0 0.5em
+	line-height: 1.2
+
+h1 
+	margin-top: 0
+	font-size: 3.157em
+
+
+h2 
+	font-size: 2.369em
+
+h3 
+	font-size: 1.777em
+
+h4 
+	font-size: 1.333em
+
+small, .font_small 
+	font-size: 0.75em
