@@ -84,7 +84,9 @@ div#spotlight {
   position: relative; }
   div#spotlight img.wp-post-image {
     display: block;
-    max-width: 940px;
+    /* max-width: 940px; */ 
+    max-width: 100%; 
+    height: auto; 
     margin: 0 auto 30px; }
     
   div#spotlight p#banner {
