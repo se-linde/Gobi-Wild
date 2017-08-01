@@ -19,7 +19,9 @@ Version: 1.0
 
 .alignright {
   float: right;
-  margin: 20px; }
+  margin: 20px;
+  width: auto; 
+  height: auto; }
 
 header {
   width: 100%;
