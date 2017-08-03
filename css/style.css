@@ -5,18 +5,24 @@
   line-height: 1.5;
   font-family: arial, sans-serif; }
 
+body {
+  background-color: #816e3e; }
+
 .alignleft, img.size-blog-list {
   float: left;
-  margin: 20px; }
+  margin: 20px;
+  max-width: 100%;
+  height: auto; }
 
 .alignright {
   float: right;
-  margin: 20px; }
+  margin: 20px;
+  max-width: 100%;
+  height: auto; }
 
 header {
   width: 100%;
   height: 220px;
-  background-color: #ccc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +34,9 @@ div#header-top {
   margin: 0 auto 10px;
   padding-top: 20px; }
   div#header-top img {
-    float: left; }
+    float: left;
+    max-width: 250px;
+    height: auto; }
   div#header-top div#search-3 {
     float: right; }
   div#header-top label.screen-reader-text {
@@ -37,7 +45,7 @@ div#header-top {
 nav {
   width: 100%;
   height: 60px;
-  border-top: 10px solid #fff; }
+  background-color: #6a5722; }
   nav ul {
     width: 100%;
     max-width: 980px;
@@ -50,53 +58,53 @@ nav {
       text-transform: uppercase; }
       nav ul li a {
         text-decoration: none;
-        color: #000;
-        line-height: 50px; }
+        color: #f4e45a;
+        line-height: 60px;
+        font-family: "autumn_ratsregular", sans-serif;
+        font-size: 1.5em; }
         nav ul li a:visited {
-          color: #000; }
-
-div#flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-div.flex-element {
-  width: 300px;
-  height: 200px;
-  background-image: url(http://via.placeholder.com/300x200);
-  margin-bottom: 20px; }
+          color: #f4e45a; }
 
 main {
   max-width: 980px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto 30px; }
+  padding: 20px;
+  margin: 0 auto 30px;
+  background-color: #ffffff; }
 
 div#spotlight {
   position: relative; }
   div#spotlight img.wp-post-image {
     display: block;
-    max-width: 940px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto 30px; }
   div#spotlight p#banner {
     position: absolute;
+    font-family: "autumn_ratsregular", sans-serif;
     z-index: 10;
     top: 10%;
-    left: 5%;
+    left: -10px;
     font-size: 2em;
-    border: 1px solid black;
-    background-color: #fff;
+    border: 2px solid #ffffff;
+    background-color: #6a5722;
+    color: #ffffff;
     padding: 1% 2%;
     line-height: 1.1; }
 
 img.carousel {
   float: right;
-  margin: 20px; }
+  margin: 20px;
+  max-width: 100%;
+  height: auto; }
 
 article.event {
   border-bottom: 2px solid black;
   overflow: hidden;
   padding-bottom: 30px; }
+  article.event:first-of-type h2 {
+    margin-top: 0; }
+  article.event:last-of-type {
+    border-bottom: 0px; }
 
 h1.post-title {
   margin-top: 30px;
@@ -130,24 +138,34 @@ footer {
   width: 100%;
   height: 120px;
   clear: both;
-  background-color: #ccc;
+  background-color: #6a5722;
   margin-top: 20px; }
   footer nav {
-    height: 100px; }
+    height: 100px;
+    background-color: #6a5722; }
     footer nav li {
       line-height: 100px; }
 
 div#copyright {
   max-width: 940px;
   margin: auto;
-  text-align: right; }
+  text-align: right;
+  color: #ffffff; }
 
+@font-face {
+  font-family: "autumn_ratsregular";
+  src: url("fonts/camp-webfont.woff2") format("woff2"), url("fonts/camp-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 p {
   margin-bottom: 1.3em; }
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #568183;
+  font-family: "autumn_ratsregular", sans-serif;
+  text-transform: uppercase; }
 
 h1 {
   margin-top: 0;
@@ -155,6 +173,9 @@ h1 {
 
 h2 {
   font-size: 2.369em; }
+
+h2 a {
+  font-family: "autumn_ratsregular", sans-serif; }
 
 h3 {
   font-size: 1.777em; }

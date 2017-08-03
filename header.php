@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">    
   
 <!-- stylesheets --> 
-    
+<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Barrio|Galindo" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
 
@@ -29,7 +29,7 @@
 <body <?php body_class(); ?>> 
 <header>
 	<div id="header-top">
-		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/logo.png" id="logo"></a>
+		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/logo.svg" id="logo"></a>
 		<?php dynamic_sidebar('header-widget'); ?>
 	</div> <!-- #header-top -->
 	<?php wp_nav_menu(array( 
