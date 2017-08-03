@@ -18,9 +18,21 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
 
 
-<!-- JavaScript and JQuery scripts --> 
+<!-- JavaScript and JQuery scripts. Includes Flexslider. --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+    
+    
+<!-- Hooking up the Flexslider --> 
+    
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+    
+<!-- end Flexslider script -->     
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
