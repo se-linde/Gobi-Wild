@@ -83,7 +83,7 @@ function get_my_title_tag() {
 
 
 
-// Thi adds the flexslider. 
+// This adds the flexslider. 
 function add_flexslider() { // display images as a flexslider 
      
     global $post;
