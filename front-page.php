@@ -4,11 +4,11 @@
 
     <div class="flexslider">
         <ul class="slides">
-        <li><img src="http://http://www.lindese.com/gobiwild/wordpress/templates/images/img-slide-01.jpg" width="540" height="400" alt="Image One"></li>
-        <li><img src="http://http://www.lindese.com/gobiwild/wordpress/templates/images/img-slide-02.jpg" width="540" height="400" alt="Image Two"></li>
-        <li><img src="http://http://www.lindese.com/gobiwild/wordpress/templates/images/img-slide-03.jpg" width="540" height="400" alt="Image Three"></li>
+        <li><img src="<?php bloginfo('template_directory'); ?>/images/540-400.png" width="940" height="400" alt="Image One"></li>
+        <li><img src="<?php bloginfo('template_directory'); ?>/images/540-400.png" width="940" height="400" alt="Image Two"></li>
+        <li><img src="<?php bloginfo('template_directory'); ?>/images/540-400.png" width="940" height="400" alt="Image Three"></li>
         </ul>
-    </div>
+</div>
 
 <!-- end Flexslider --> 
 
