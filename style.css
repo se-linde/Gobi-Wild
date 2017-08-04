@@ -14,7 +14,7 @@ Version: 1.0
   font-family: arial, sans-serif; }
 
 body {
-  background-color: #816e3e; }
+  background-color: #9a8963; }
 
 .alignleft, img.size-blog-list {
   float: left;
@@ -53,7 +53,7 @@ div#header-top {
 nav {
   width: 100%;
   height: 60px;
-  background-color: #6a5722; }
+  background-color: #6a5823; }
   nav ul {
     width: 100%;
     max-width: 980px;
@@ -94,14 +94,14 @@ div#spotlight {
     left: -10px;
     font-size: 2em;
     border: 2px solid #ffffff;
-    background-color: #6a5722;
+    background-color: #6a5823;
     color: #ffffff;
     padding: 1% 2%;
     line-height: 1.1; }
 
-img.carousel {
+.metaslider {
   float: right;
-  margin: 20px;
+  margin: 20px 0;
   max-width: 100%;
   height: auto; }
 
@@ -113,6 +113,11 @@ article.event {
     margin-top: 0; }
   article.event:last-of-type {
     border-bottom: 0px; }
+  article.event a {
+    color: #568183;
+    text-decoration: none; }
+    article.event a:visited {
+      color: #568183; }
 
 h1.post-title {
   margin-top: 30px;
@@ -138,6 +143,9 @@ img.size-blog-list {
   margin-top: 0;
   margin-left: 0; }
 
+form.wpcf7-form label {
+  font-family: "autumn_ratsregular", sans-serif; }
+
 ol {
   margin-left: 5%;
   margin-bottom: 20px; }
@@ -146,11 +154,11 @@ footer {
   width: 100%;
   height: 120px;
   clear: both;
-  background-color: #6a5722;
+  background-color: #6a5823;
   margin-top: 20px; }
   footer nav {
     height: 100px;
-    background-color: #6a5722; }
+    background-color: #6a5823; }
     footer nav li {
       line-height: 100px; }
 

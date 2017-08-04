@@ -1,7 +1,7 @@
 //colors
 $green: #568183
-$lightBrown: #816e3e
-$darkBrown: #6a5722
+$lightBrown: #9a8963
+$darkBrown: #6a5823
 $white: #ffffff
 $yellow: #f4e45a
 
@@ -101,9 +101,9 @@ div#spotlight
 		padding: 1% 2%
 		line-height: 1.1
 
-img.carousel
+.metaslider
 	float: right
-	margin: 20px
+	margin: 20px 0
 	max-width: 100%
 	height: auto
 
@@ -116,6 +116,11 @@ article.event
 		margin-top: 0
 	&:last-of-type
 		border-bottom: 0px
+	a 
+		color: $green
+		text-decoration: none
+		&:visited
+			color: $green
 
 h1.post-title
 	margin-top: 30px
@@ -142,6 +147,11 @@ img.size-blog-list
 	@extend .alignleft
 	margin-top: 0
 	margin-left: 0
+
+//Contact Form
+form.wpcf7-form
+	label
+		font-family: 'autumn_ratsregular', sans-serif
 
 ol 
 	margin-left: 5%
