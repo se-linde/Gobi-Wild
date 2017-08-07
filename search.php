@@ -23,7 +23,5 @@
 		echo '<h3>No Results Found</h3>';
 
 	endif; ?>
-
-    <small>search.php</small>
-        
+    
 <?php get_footer(); ?>

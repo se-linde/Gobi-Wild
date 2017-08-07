@@ -14,8 +14,5 @@
     
 
 <?php endwhile; endif; ?>
-
-        
-<small>index.php</small> 
-    
+  
 <?php get_footer(); ?>

@@ -6,7 +6,5 @@
         <?php the_content(); ?> 
 
     <?php endwhile; endif; ?>
-        
-    <small>single.php</small>   
-        
+       
 <?php get_footer(); ?>

@@ -7,8 +7,5 @@
         <?php the_content(); ?>
     
     <?php endwhile; endif; // End the loops. ?>
-        
-    <small>page.php</small> 
-    
 
 <?php get_footer(); ?> 

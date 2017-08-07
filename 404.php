@@ -13,8 +13,6 @@
         
         <p>There doesn't seem to be anything here!</p>    
             
-        <small>404.php</small>
-        
         <!-- end content  -->
         
         <!-- footer start -->
