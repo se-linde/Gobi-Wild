@@ -18,6 +18,18 @@
 
 <!-- JavaScript and JQuery scripts --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<!-- Mobile Nav -->
+<script>
+	$(function(){
+		$('#menu-icons').click(function(){
+			$('#open').toggle();
+			$('#close').toggle();
+			$('#main-nav').toggle();
+		});
+	})
+</script>
+
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
@@ -27,7 +39,19 @@
 <header>
 	<div id="header-top">
 		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/logo.svg" id="logo"></a>
+
 		<?php dynamic_sidebar('header-widget'); ?>
+
+		<div id="menu-icons">
+			<span id="open">
+				&#9776;
+			</span> <!-- #open -->
+
+			<span id="close">
+				&#10006;
+			</span> <!-- #close -->
+		</div> <!-- #menu-icons -->
+
 	</div> <!-- #header-top -->
 	<?php wp_nav_menu(array( 
 		'theme_location' => 'main-menu',

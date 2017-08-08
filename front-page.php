@@ -18,7 +18,11 @@
 	    	if ( has_post_thumbnail() ) {
 	    		echo '<div id="spotlight">';
 				the_post_thumbnail();
-				echo '<p id="banner">' . get_post_meta($post->ID, 'banner', true) . '</p>';
+                echo '<div class="banner">';
+				echo '<a href="';
+                echo bloginfo('url');
+                echo '/events">' . get_post_meta($post->ID, 'banner', true) . '</a>';                
+                echo '</div><!-- .banner -->';
 				echo '</div><!-- #spotlight -->';
 			} 
 		
