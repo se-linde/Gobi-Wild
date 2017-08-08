@@ -13,63 +13,157 @@ body {
   margin: 20px;
   max-width: 100%;
   height: auto; }
+  @media (max-width: 21.875em) {
+    .alignleft, img.size-blog-list {
+      float: none;
+      display: block;
+      width: 100%;
+      margin: auto; } }
 
 .alignright {
   float: right;
   margin: 20px;
   max-width: 100%;
   height: auto; }
+  @media (max-width: 21.875em) {
+    .alignright {
+      float: none;
+      display: block;
+      width: 100%;
+      margin: auto; } }
+
+.aligncenter {
+  display: block;
+  margin: auto; }
 
 header {
   width: 100%;
-  height: 220px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: relative; }
+  @media (max-width: 62.5em) {
+    header {
+      height: 230px; } }
+  @media (max-width: 35.625em) {
+    header {
+      height: auto; } }
+  @media (max-width: 21.875em) {
+    header {
+      height: 100vh;
+      display: block; } }
 
 div#header-top {
   width: 80%;
   max-width: 980px;
   margin: 0 auto 10px;
   padding-top: 20px; }
+  @media (max-width: 62.5em) {
+    div#header-top {
+      width: 95%;
+      height: 100px; } }
+  @media (max-width: 35.625em) {
+    div#header-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3%; } }
   div#header-top img {
     float: left;
-    max-width: 250px;
+    max-width: 340px;
     height: auto; }
+    @media (max-width: 62.5em) {
+      div#header-top img {
+        max-width: 250px; } }
+    @media (max-width: 35.625em) {
+      div#header-top img {
+        width: 70%;
+        float: none; } }
   div#header-top div#search-3 {
     float: right; }
+  @media (max-width: 35.625em) {
+    div#header-top form {
+      display: none; } }
   div#header-top label.screen-reader-text {
     display: none; }
+  div#header-top div#menu-icons {
+    display: none;
+    font-size: 3em; }
+    @media (max-width: 35.625em) {
+      div#header-top div#menu-icons {
+        display: block; } }
+    div#header-top div#menu-icons span#close {
+      display: none; }
 
 nav {
   width: 100%;
   height: 60px;
   background-color: #6a5823; }
+  @media (max-width: 35.625em) {
+    nav {
+      height: auto; } }
   nav ul {
     width: 100%;
-    max-width: 980px;
+    max-width: 1050px;
     list-style-type: none;
     display: flex;
     margin: auto; }
+    @media (max-width: 35.625em) {
+      nav ul {
+        display: block; } }
     nav ul li {
       text-align: center;
       width: 100%;
       text-transform: uppercase; }
+      @media (max-width: 35.625em) {
+        nav ul li:not(:last-of-type) {
+          border-bottom: 4px solid #9a8963;
+          width: 95%;
+          margin: auto; } }
       nav ul li a {
         text-decoration: none;
         color: #f4e45a;
         line-height: 60px;
         font-family: "autumn_ratsregular", sans-serif;
-        font-size: 1.5em; }
+        font-size: 2.2em; }
         nav ul li a:visited {
           color: #f4e45a; }
+        nav ul li a:active, nav ul li a:hover {
+          color: #ffffff; }
+        @media (max-width: 62.5em) {
+          nav ul li a {
+            font-size: 1.5em; } }
+        @media (max-width: 35.625em) {
+          nav ul li a {
+            font-size: 2em; } }
+
+@media (max-width: 35.625em) {
+  nav#main-nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 100; } }
+
+div#menu-icons {
+  display: none;
+  cursor: pointer; }
+  @media (max-width: 35.625em) {
+    div#menu-icons {
+      display: block; } }
 
 main {
   max-width: 980px;
   padding: 20px;
   margin: 0 auto 30px;
   background-color: #ffffff; }
+  @media (max-width: 21.875em) {
+    main {
+      margin-bottom: 0;
+      padding: 20px 0; } }
 
 div#spotlight {
   position: relative; }
@@ -78,27 +172,51 @@ div#spotlight {
     max-width: 100%;
     height: auto;
     margin: 0 auto 30px; }
-  div#spotlight p#banner {
+  div#spotlight div.banner {
     position: absolute;
-    font-family: "autumn_ratsregular", sans-serif;
     z-index: 10;
-    top: 10%;
+    top: 30px;
     left: -10px;
-    font-size: 2em;
     border: 2px solid #ffffff;
     background-color: #6a5823;
-    color: #ffffff;
-    padding: 1% 2%;
-    line-height: 1.1; }
+    padding: 1% 2%; }
+    @media (max-width: 33.75em) {
+      div#spotlight div.banner {
+        width: 45%;
+        min-width: 230px; } }
+    div#spotlight div.banner a {
+      line-height: 1.1;
+      font-size: 2em;
+      font-family: "autumn_ratsregular", sans-serif;
+      color: #ffffff;
+      text-decoration: none; }
+      @media (max-width: 33.75em) {
+        div#spotlight div.banner a {
+          font-size: 1.4em;
+          line-height: 0; } }
+      div#spotlight div.banner a:visited {
+        color: #ffffff; }
+      div#spotlight div.banner a:hover {
+        color: #f4e45a; }
 
 .metaslider {
   float: right;
   margin: 20px 0;
-  max-width: 100%;
+  margin-left: 20px;
+  max-width: 540px;
   height: auto; }
+  @media (max-width: 53.125em) {
+    .metaslider {
+      max-width: 50%; } }
+  @media (max-width: 37.5em) {
+    .metaslider {
+      margin: 20px auto;
+      float: none;
+      display: block;
+      max-width: 100%; } }
 
 article.event {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #9a8963;
   overflow: hidden;
   padding-bottom: 30px; }
   article.event:first-of-type h2 {
@@ -106,10 +224,10 @@ article.event {
   article.event:last-of-type {
     border-bottom: 0px; }
   article.event a {
-    color: #568183;
+    color: #6a5823;
     text-decoration: none; }
     article.event a:visited {
-      color: #568183; }
+      color: #6a5823; }
 
 h1.post-title {
   margin-top: 30px;
@@ -117,48 +235,80 @@ h1.post-title {
 
 h2.post-title {
   margin-bottom: 0;
-  margin-top: 30px; }
+  margin-top: 30px;
+  font-size: 2.169em;
+  line-height: 1; }
   h2.post-title a {
     text-decoration: none;
-    color: black; }
+    color: #6a5823; }
     h2.post-title a:visited {
-      color: black; }
+      color: #6a5823; }
 
 h3.post-meta {
+  font-family: arial, sans-serif;
   margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.5em; }
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 200; }
   h3.post-meta a {
     text-decoration: none; }
 
 img.size-blog-list {
   margin-top: 0;
   margin-left: 0; }
+  @media (max-width: 43.75em) {
+    img.size-blog-list {
+      width: 100%;
+      float: none;
+      margin: auto; } }
 
 form.wpcf7-form label {
   font-family: "autumn_ratsregular", sans-serif; }
+form.wpcf7-form input {
+  padding: 5px 7px;
+  border: 3px solid #9a8963;
+  border-radius: 7px; }
+form.wpcf7-form textarea {
+  padding: 5px 0 5px 7px;
+  border: 4px solid #9a8963;
+  border-radius: 7px; }
+form.wpcf7-form .wpcf7-submit {
+  background: #9a8963;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #ffffff;
+  border-radius: 7px; }
 
 ol {
   margin-left: 5%;
   margin-bottom: 20px; }
 
 footer {
+  min-height: 80px;
   width: 100%;
-  height: 120px;
   clear: both;
   background-color: #6a5823;
-  margin-top: 20px; }
+  padding-top: 20px; }
+  @media (max-width: 21.875em) {
+    footer {
+      height: auto;
+      padding-top: 0; } }
   footer nav {
-    height: 100px;
-    background-color: #6a5823; }
-    footer nav li {
-      line-height: 100px; }
+    background-color: #6a5823;
+    margin-bottom: 20px; }
 
 div#copyright {
   max-width: 940px;
   margin: auto;
+  padding-right: 20px;
   text-align: right;
   color: #ffffff; }
+  @media (max-width: 35.625em) {
+    div#copyright {
+      text-align: center;
+      padding-right: 0; } }
 
 @font-face {
   font-family: "autumn_ratsregular";
@@ -169,18 +319,24 @@ p {
   margin-bottom: 1.3em; }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 0.75em 0 0.5em;
   line-height: 1.2;
-  color: #568183;
-  font-family: "autumn_ratsregular", sans-serif;
-  text-transform: uppercase; }
+  color: #6a5823;
+  font-family: "autumn_ratsregular", sans-serif; }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.157em; }
+  margin: 0;
+  font-size: 5.157em;
+  line-height: 1; }
+  @media (max-width: 56.25em) {
+    h1 {
+      font-size: 4.157em; } }
 
 h2 {
-  font-size: 2.369em; }
+  font-size: 2.869em; }
+  @media (max-width: 56.25em) {
+    h2 {
+      font-size: 2.369; } }
 
 h2 a {
   font-family: "autumn_ratsregular", sans-serif; }
@@ -193,5 +349,9 @@ h4 {
 
 small, .font_small {
   font-size: 0.75em; }
+
+@media (max-width: 21.875em) {
+  p, h1, h2, h3, h4, small {
+    margin: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

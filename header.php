@@ -15,12 +15,21 @@
 <!-- stylesheets --> 
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Barrio|Galindo" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
-
 
 <!-- JavaScript and JQuery scripts. Includes Flexslider. --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+
+<!-- Mobile Nav -->
+<script>
+	$(function(){
+		$('#menu-icons').click(function(){
+			$('#open').toggle();
+			$('#close').toggle();
+			$('#main-nav').toggle();
+		});
+	})
+</script>
+
     
     
 <!-- Hooking up the Flexslider --> 
@@ -42,7 +51,19 @@
 <header>
 	<div id="header-top">
 		<a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/logo.svg" id="logo"></a>
+
 		<?php dynamic_sidebar('header-widget'); ?>
+
+		<div id="menu-icons">
+			<span id="open">
+				&#9776;
+			</span> <!-- #open -->
+
+			<span id="close">
+				&#10006;
+			</span> <!-- #close -->
+		</div> <!-- #menu-icons -->
+
 	</div> <!-- #header-top -->
 	<?php wp_nav_menu(array( 
 		'theme_location' => 'main-menu',
@@ -52,12 +73,7 @@
 		)
 	); ?>
 </header>
-<!-- End Header -->    
-    
-    
-<!-- begin navigation - the nav bar -->
-
-<!-- end navigation - the nav bar -->    
+<!-- End Header -->      
     
 <!-- begin the content -->     
 <main>    
