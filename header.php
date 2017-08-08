@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Barrio|Galindo" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 
-<!-- JavaScript and JQuery scripts --> 
+<!-- JavaScript and JQuery scripts. Includes Flexslider. --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 <!-- Mobile Nav -->
@@ -30,6 +30,18 @@
 	})
 </script>
 
+    
+    
+<!-- Hooking up the Flexslider --> 
+    
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+    
+<!-- end Flexslider script -->     
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
