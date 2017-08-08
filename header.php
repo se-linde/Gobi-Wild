@@ -15,12 +15,9 @@
 <!-- stylesheets --> 
 <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Barrio|Galindo" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
-
 
 <!-- JavaScript and JQuery scripts --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
@@ -40,12 +37,7 @@
 		)
 	); ?>
 </header>
-<!-- End Header -->    
-    
-    
-<!-- begin navigation - the nav bar -->
-
-<!-- end navigation - the nav bar -->    
+<!-- End Header -->      
     
 <!-- begin the content -->     
 <main>    
