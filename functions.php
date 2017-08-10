@@ -18,8 +18,6 @@ function gobi_widgets_init() {
 		'description' 	=> __( 'Widgets in this area will be shown in the upper-right header area', 'gobi-wild' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
 	));
 }
 
@@ -44,6 +42,12 @@ function new_excerpt_more($more) {
 	return '<a href="'. get_permalink($post->ID) . '">....LEARN MORE</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+//Constrains excerpt length
+function custom_excerpt_length ($length) {
+	return 125;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 // SEO Title Tag
 function get_my_title_tag() {
