@@ -27,21 +27,28 @@
 			$('#close').toggle();
 			$('#main-nav').toggle();
 		});
-	})
-</script>
 
-    
-    
-<!-- Hooking up the Flexslider --> 
-    
-<!-- Place in the <head>, after the three links -->
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
-</script>
-    
-<!-- end Flexslider script -->     
+		var $input = $('input#s');
+		if($input.val() != ''){
+			$input.css('background-image', 'none');
+		}
+
+		$input.focus(function(){
+			$input.css('background-image', 'none');
+		});
+
+		$input.blur(function(){
+			if($input.val() == ''){
+				$input.css('background-image', 'url(<?php bloginfo('template_directory'); ?>/assets/search.png)');
+			}
+		});
+
+		if($(window).width() > 540){
+			$('#main-nav').show();
+		}
+	});
+	
+</script>   
     
 <!-- The WP head --> 
 <?php wp_head(); ?>    
@@ -65,6 +72,7 @@
 		</div> <!-- #menu-icons -->
 
 	</div> <!-- #header-top -->
+
 	<?php wp_nav_menu(array( 
 		'theme_location' => 'main-menu',
 		'container' => 'nav',

@@ -1,9 +1,10 @@
 //colors
-$darkBrown: #568183
+$green: #568183
 $lightBrown: #9a8963
 $darkBrown: #6a5823
 $white: #ffffff
 $yellow: #f4e45a
+$darkGrey: #303030
 
 //Responsive Mixin
 @mixin forSmallScreens($media) 
@@ -54,21 +55,18 @@ header
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	margin-bottom: 10px
 	position: relative
 	@include forSmallScreens(1000)
 		height: 230px 
 	@include forSmallScreens(570)
-		height: auto
-	@include forSmallScreens(350)
-		height: 100vh
-		display: block
+		height: 100px
 
 div#header-top
 	width: 80%
 	max-width: 980px
 	margin: 0 auto 10px
 	padding-top: 20px
+	position: relative
 	@include forSmallScreens(1000)
 		width: 95%
 		height: 100px
@@ -89,6 +87,20 @@ div#header-top
 			float: none
 	div#search-3
 		float: right
+		input#s
+			position: absolute
+			bottom: 20px
+			right: 0
+			font-size: 1.1em 
+			line-height: 1.2
+			background-image: url('assets/search.png')
+			background-repeat: no-repeat
+			border-radius: 15px
+			padding: 5px 
+			width: 30%
+			max-width: 300px
+		input[type="submit"]
+			display: none
 	form
 		@include forSmallScreens(570)
 			display: none
@@ -155,11 +167,18 @@ div#menu-icons
 main 
 	max-width: 980px
 	padding: 20px
-	margin: 0 auto 30px
+	margin: auto
 	background-color: $white
 	@include forSmallScreens(350)
 		margin-bottom: 0
 		padding: 20px 0
+	a 
+		color: $darkBrown
+		text-decoration: none
+		font-family: 'autumn_ratsregular', sans-serif
+		font-size: 1.1em
+		&:visited
+			color: $darkBrown
 
 div#spotlight
 	position: relative
@@ -199,6 +218,7 @@ div#spotlight
 	margin-left: 20px 
 	max-width: 540px
 	height: auto
+	position: relative 
 	@include forSmallScreens(850)
 		max-width: 50%
 	@include forSmallScreens(600)
@@ -206,6 +226,17 @@ div#spotlight
 		float: none
 		display: block
 		max-width: 100%
+	div.caption-wrap
+		position: absolute
+		bottom: 2%
+		left: 2% 
+		background-color: $darkBrown
+		opacity: 1
+		width: auto
+		max-width: 65%
+		border: 2px solid $white
+		div.caption 
+			font-family: 'autumn_ratsregular', sans-serif
 
 //Post Styles
 article.event
@@ -216,11 +247,6 @@ article.event
 		margin-top: 0
 	&:last-of-type
 		border-bottom: 0px
-	a 
-		color: $darkBrown
-		text-decoration: none
-		&:visited
-			color: $darkBrown
 
 h1.post-title
 	margin-top: 30px
@@ -233,9 +259,9 @@ h2.post-title
 	line-height: 1
 	a 
 		text-decoration: none
-		color: $darkBrown
+		color: $green
 		&:visited 
-			color: $darkBrown
+			color: $green
 
 h3.post-meta
 	font-family: arial, sans-serif
@@ -319,20 +345,17 @@ p
 h1, h2, h3, h4 
 	margin: 0.75em 0 0.5em
 	line-height: 1.2
-	color: $darkBrown
+	color: $darkGrey
 	font-family: 'autumn_ratsregular', sans-serif
 
 h1 
 	margin: 0
-	font-size: 5.157em
+	font-size: 4.157em
 	line-height: 1
-	@include forSmallScreens(900)
-		font-size: 4.157em
 
 h2 
-	font-size: 2.869em
-	@include forSmallScreens(900)
-		font-size: 2.369
+	font-size: 2.369em
+	color: $green
 
 h2 a
 	font-family: 'autumn_ratsregular', sans-serif
